@@ -49,8 +49,8 @@ The following packages are required for the `altacv` and `developercv` classes. 
 - `latex-bin`: Core LaTeX binaries.
 - `pdflatex`: pdfLaTeX engine.
 
-## Reproducible Build
-The `Dockerfile.new` uses a "baking" strategy:
+## Build
+The `Dockerfile` uses a "baking" strategy:
 1.  Starts from `ubuntu:22.04`.
 2.  Installs MiKTeX from official repositories.
 3.  Pre-installs a core set of packages via `miktex packages install`.
@@ -59,5 +59,6 @@ The `Dockerfile.new` uses a "baking" strategy:
 
 Build the image:
 ```bash
-docker build -t zacsek/miktex:reproducible -f Dockerfile.new .
+docker build -t zacsek/miktex -f Dockerfile .
+```
 ```

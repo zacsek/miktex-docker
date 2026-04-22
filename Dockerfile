@@ -1,7 +1,7 @@
 FROM ubuntu:22.04
 
 LABEL version="3.4"
-LABEL description="Reproducible MiKTeX environment on Ubuntu 22.04 with XeLaTeX support"
+LABEL description="MiKTeX environment on Ubuntu 22.04 with XeLaTeX support"
 
 ENV DEBIAN_FRONTEND=noninteractive
 

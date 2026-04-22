@@ -1,6 +1,6 @@
 .PHONY: build push clean
 
-IMAGE := zacsek/miktex:reproducible
+IMAGE := zacsek/miktex
 
 build:
 	docker build -t $(IMAGE) .
