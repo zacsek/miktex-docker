@@ -1,0 +1,38 @@
+% Mirrors the package set of altacv.cls + layouts/altacv (cv repo).
+% Compiled at image build time to bake in packages and fail fast on breakage.
+\begin{filecontents*}[overwrite]{\jobname.xmpdata}
+\Title{MiKTeX smoke test}
+\Author{miktex-docker}
+\end{filecontents*}
+\documentclass[10pt,a4paper]{article}
+\usepackage{etoolbox}
+\usepackage[a-1b]{pdfx}
+\usepackage{accsupp}
+\usepackage[margin=2cm]{geometry}
+\usepackage[fixed]{fontawesome5}
+\usepackage{ifxetex,ifluatex}
+\usepackage{scrlfile}
+\usepackage{xparse}
+\usepackage{cmap}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[rm]{roboto}
+\usepackage[defaultsans]{lato}
+\usepackage[newcommands]{ragged2e}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage[skins]{tcolorbox}
+\usepackage[inline]{enumitem}
+\usepackage{graphicx}
+\usepackage{trimclip}
+\usepackage{dashrule}
+\usepackage{multirow,tabularx}
+\usepackage{changepage}
+\usepackage{marginfix}
+\usepackage{afterpage}
+\usepackage{pgffor}
+\usepackage{paracol}
+\begin{document}
+\faAt{} Szőcs Zoltán -- äöüß \textsf{efficient workflows}
+\begin{tcolorbox}\tikz\draw (0,0) -- (1,0);\end{tcolorbox}
+\end{document}
